@@ -1,0 +1,23 @@
+{
+  "model_type": "proto_mech",
+  "proto_num": 14,
+  "proto_topk": 3,
+  "proto_mech_lambda": 1.5,
+  "proto_diversity_lambda": 0.1,
+  "pathway_methods": ["ssgsea", "progeny"],
+  "pathway_resource_map": {
+    "ssgsea": "data/resource/c2.cp.reactome.v2025.1.Hs.symbols.gmt",
+    "progeny": "data/resource/progeny_human_top500.tsv"
+  },
+  "proto_pathway_priors": {},
+  "threshold_strategy": "f1_grid",
+  "threshold_beta": 1.0,
+  "enable_mechanism_film": true,
+  "enable_drug_fingerprints": true,
+  "drug_fingerprint_cache": "data/resources/drug_fingerprint_cache.npz",
+  "drug_fingerprint_static_weight": 0.5,
+  "drug_fingerprint_dynamic_weight": 0.5,
+  "drug_fingerprint_methods": ["progeny"],
+  "enable_clusterwise_thresholds": false,
+  "cluster_threshold_mode": "global"
+}
